@@ -1,12 +1,10 @@
 public class Trainer {
     String name;
-    int teamSize;
     int curMon = 0;
-    Mon[] team = new Mon[teamSize];
+    Mon[] team = new Mon[6];
 
-    Trainer(String name, int teamSize){
-        this.name = name;
-        this.teamSize = teamSize;
+    Trainer(){
+        this.name = "jeff";
     }
 
     public void checkMon(int mon){
@@ -20,10 +18,11 @@ public class Trainer {
         for(Mon mon : team){
             outCount++;
         }
-        if(outCount == teamSize){
+        if(outCount == team.length){
             lose();
         }
     }
+
 
     public void changeMon(){
         noMon();
@@ -33,8 +32,8 @@ public class Trainer {
     }
 
     public void attack(){
-        team[curMon].attack();
-    }
+        team[curMon].attack((int) ((Math.random() * (3 - 1)) + 1));
+    }int move = (int) ((Math.random() * (3 - 1)) + 1);
 
     public void lose(){
         System.out.println(name + "lost the battle!!");
