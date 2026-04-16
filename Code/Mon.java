@@ -1,33 +1,37 @@
 public class Mon {
 
-    String name;
-    String type;
-    int hp;
-    int lvl = 1;
+     static String name;
+      int hp;
+     static int maxHp;
 
-    Move moveOne = new Move("Punch","Normal",10,5);
-    Move moveTwo = new Move("Kick","Normal",7,10);
-    Move moveThree = new Move("Slap","Normal",10,15);
-
-    Mon(String name, String  type, int hp) {
-        this.name = name;
-        this.type = type;
-        this.hp = hp;
+    Mon() {
+        this.name = "base";
+        this.hp = 50;
+        this.maxHp = 50;
     }
 
-    public void lvlUp(int levels){
-        lvl += levels;
-        hp += levels*5;
+    static Move moveOne = new Move("Slap",10,10);
+    static Move moveTwo = new Move("Kick",20,5);
+    static Move moveThree = new Move("Punch",30,5);
+
+    public static void printMove(Move move){
+
+        System.out.print(move.name + " | dmg: " + move.dmg + " | uses: " + move.uses);
+
     }
 
-    public int attack(){
-        int move = (int) ((Math.random() * (3 - 1)) + 1);
+    public void printStats(){
+        System.out.println(this.name + "\nHP: " + this.hp +"/"+this.maxHp);
+    }
+
+    public int attack(int move){
+
         if(move == 1){
             if(moveOne.uses > 0){
                 moveOne.uses--;
                 return moveOne.dmg;
             } else{
-                attack();
+                attack(move);
             }
 
         } else if (move == 2) {
@@ -35,14 +39,14 @@ public class Mon {
                 moveTwo.uses--;
                 return moveTwo.dmg;
             } else{
-                attack();
+                attack(move);
             }
         } else if (move == 3) {
             if(moveThree.uses > 0){
                 moveThree.uses--;
                 return moveThree.dmg;
             } else{
-                attack();
+                attack(move);
             }
         }
         return 0;
