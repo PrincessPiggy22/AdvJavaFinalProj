@@ -1,22 +1,33 @@
 public class Mon {
 
-     static String name;
+      String name;
       int hp;
-     static int maxHp;
+      int maxHp;
+    Move moveOne = new Move("Slap",10,10);
+    Move moveTwo = new Move("Kick",20,5);
+    Move moveThree = new Move("Punch",30,5);
 
-    Mon() {
-        this.name = "base";
-        this.hp = 50;
-        this.maxHp = 50;
+    Mon(String name, int hp, int maxHp) {
+        this.name = name;
+        this.hp = hp;
+        this.maxHp = maxHp;
     }
 
-    static Move moveOne = new Move("Slap",10,10);
-    static Move moveTwo = new Move("Kick",20,5);
-    static Move moveThree = new Move("Punch",30,5);
+     public void makeMove(int moveNum, String name, int dmg, int uses){
+        if(moveNum == 1){
+            moveOne = new Move(name,dmg,uses);
+        } else if (moveNum == 2) {
+            moveTwo = new Move(name,dmg,uses);
+        } else if (moveNum == 3) {
+            moveThree = new Move(name,dmg,uses);
+        } else {
+            System.out.println("Invalid move number");
+        }
+     }
 
-    public static void printMove(Move move){
+    public void printMove(Move move){
 
-        System.out.print(move.name + " | dmg: " + move.dmg + " | uses: " + move.uses);
+        System.out.print(move.name + " | dmg: " + move.dmg + " | uses: " + move.uses +"\n");
 
     }
 
