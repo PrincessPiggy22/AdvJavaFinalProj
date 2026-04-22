@@ -241,28 +241,28 @@ public class Main {
 
     public static void main(String[] args) {
          //AI debug
-        zingbah.makeMove(1, "godBlast", 10000, 1);
-        zingbah.makeMove(2, "Boohbah Bounce", 50, 15);
-        zingbah.makeMove(3, "orange", 30, 10);
+        zingbah.makeMove(1, "God Blast", 10000, 1);
+        zingbah.makeMove(2, "Boohbah Supreme Bounce", 150, 50);
+        zingbah.makeMove(3, "orange", 200, 13);
 
-        Jingbah.makeMove(1, "Sparkle Beam", 80, 15);
-        Jingbah.makeMove(2, "Boohbah Bounce", 67, 10);
-        Jingbah.makeMove(3, "pink fluffy unicorns dancing on rainbows", 100, 3);
+        Jingbah.makeMove(1, "Sparkle Beam", 100, 15);
+        Jingbah.makeMove(2, "Boohbah Bounce", 70, 13);
+        Jingbah.makeMove(3, "pink fluffy unicorns dancing on rainbows", 150, 3);
 
-        Zumbah.makeMove(1, "Zoombah", 40, 20);
-        Zumbah.makeMove(2, "Boohbah Bounce", 25, 50);
-        Zumbah.makeMove(3, "urple guy", 90, 3);
+        Zumbah.makeMove(1, "Zoombah", 50, 20);
+        Zumbah.makeMove(2, "Boohbah Bounce", 55, 50);
+        Zumbah.makeMove(3, "urple guy", 70, 3);
 
         Humbah.makeMove(1, "Pipe Bomb", 10000, 1);
-        Humbah.makeMove(2, "Boohbah Bounce", 25, 50);
-        Humbah.makeMove(3, "King in Yellow", 60, 20);
+        Humbah.makeMove(2, "Boohbah Bounce", 70, 50);
+        Humbah.makeMove(3, "King in Yellow", 80, 35);
 
         sixSeven.makeMove(1, "67", 676767, 67);
         sixSeven.makeMove(2, "Brainrot Blast", 676921, 69);
         sixSeven.makeMove(3, "Skibidi Sigma Ohio Fortnite Battlepass TungTungTung 67 21 Alpha Chad Rizzler Rizz", 99999999, 1000);
 
         Jumbah.makeMove(1, "Hydrate or Die-drate", 60, 20);
-        Jumbah.makeMove(2, "Boohbah Bounce", 25, 50);
+        Jumbah.makeMove(2, "Boohbah Bounce", 65, 50);
         Jumbah.makeMove(3, "Cookie Monster", 80, 15);
 
         Collins.makeMove(1, "I Don't Care Anymore", 1, 10000);
