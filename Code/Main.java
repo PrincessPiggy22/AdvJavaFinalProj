@@ -170,7 +170,7 @@ public class Main {
         if(enemMon.hp > 0){
             enemyAttacks(yourMon, enemMon);
         } else {
-            rounds(round);
+            rounds(round + 1);
         }
 
         battleLoop(yourMon, enemMon, round);

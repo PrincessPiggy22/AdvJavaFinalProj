@@ -42,7 +42,7 @@ public class Mon {
                 moveOne.uses--;
                 return moveOne.dmg;
             } else{
-                attack(move);
+                return 0;
             }
 
         } else if (move == 2) {
@@ -50,14 +50,14 @@ public class Mon {
                 moveTwo.uses--;
                 return moveTwo.dmg;
             } else{
-                attack(move);
+                return 0;
             }
         } else if (move == 3) {
             if(moveThree.uses > 0){
                 moveThree.uses--;
                 return moveThree.dmg;
             } else{
-                attack(move);
+                return 0;
             }
         }
         return 0;
